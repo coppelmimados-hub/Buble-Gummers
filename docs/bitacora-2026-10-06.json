@@ -1,0 +1,59 @@
+{
+  "fecha": "2026-10-06",
+  "movimientos": [
+    {
+      "marca": "Bubble Gummers",
+      "texto": "escrito el monitor de la API de Mercado Libre en Google Apps Script: stock FULL, precios, Product Ads y alertas, con corrida cada 6 h. Repo coppelmimados-hub/Buble-Gummers, rama claude/mercado-libre-api-bubble-gummers-ooetuv, commit b40d979. Sin probar todavía contra la cuenta."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "confirmado que \"Mis aplicaciones\" del DevCenter de ML no aparece en el menú del portal: se entra solo por https://developers.mercadolibre.com.mx/devcenter."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "la titular logró entrar a crear la app con la cuenta principal BA BRANDS. Un usuario colaborador no puede autorizar apps, ML devuelve invalid_operator_user_id."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "la pantalla de autorización apareció ya con el logo de la marca, lo que indica que ya existía una app creada antes. No confirmado cuál es su App ID."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "verificado en la documentación de ML que no existe endpoint público para ver envíos a FULL en tránsito: solo se puede leer lo ya recibido, INBOUND_RECEPTION. Lo que viene en camino se sigue por el panel."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "verificado que el refresh_token de ML es de un solo uso y el access_token dura 6 h. El acceso se pierde si la app no se usa en 4 meses, si cambia la contraseña, si se regenera el Secret o si se revocan permisos."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "proceso puesto en pausa a petición del usuario hasta poder hacer el procedimiento completo."
+    }
+  ],
+  "pendientes": [
+    {
+      "marca": "Bubble Gummers",
+      "texto": "confirmar si ya existía una app en el DevCenter antes de crear otra, y con cuál App ID nos quedamos"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "crear la hoja \"BG - Monitor ML\" con la cuenta de Google de la empresa, no una personal, porque el disparador de 6 h corre bajo la cuenta dueña del proyecto"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "cargar CLIENT_ID, CLIENT_SECRET y REDIRECT_URI en las propiedades del proyecto de Apps Script antes de pedir el code"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "correr paso1 y paso2 de autorización con la titular, el code TG- caduca en minutos"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "confirmar en la primera corrida las rutas de campañas y anuncios de Product Ads, que la documentación de ML muestra de tres formas distintas"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "probar un cambio chico en la pestaña Cambios antes de poner CAMBIOS_HABILITADOS en SI"
+    }
+  ]
+}
