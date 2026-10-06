@@ -3,19 +3,35 @@
   "movimientos": [
     {
       "marca": "Bubble Gummers",
-      "texto": "escrito el monitor de la API de Mercado Libre en Google Apps Script: stock FULL, precios, Product Ads y alertas, con corrida cada 6 h. Repo coppelmimados-hub/Buble-Gummers, rama claude/mercado-libre-api-bubble-gummers-ooetuv, commit b40d979. Sin probar todavía contra la cuenta."
+      "texto": "escrito el monitor de la API de Mercado Libre en Google Apps Script: stock FULL, precios, Product Ads y alertas, con corrida cada 6 h. Repo coppelmimados-hub/Buble-Gummers, rama claude/mercado-libre-api-bubble-gummers-ooetuv. Sin probar todavía contra la cuenta."
     },
     {
       "marca": "Bubble Gummers",
-      "texto": "confirmado que \"Mis aplicaciones\" del DevCenter de ML no aparece en el menú del portal: se entra solo por https://developers.mercadolibre.com.mx/devcenter."
+      "texto": "creada la app Monitor BG en el DevCenter de ML con la cuenta principal BA BRANDS. Client ID 8537530305393558, redirect URI https://www.google.com/, Refresh Token activado, PKCE apagado, sin tópicos."
     },
     {
       "marca": "Bubble Gummers",
-      "texto": "la titular logró entrar a crear la app con la cuenta principal BA BRANDS. Un usuario colaborador no puede autorizar apps, ML devuelve invalid_operator_user_id."
+      "texto": "permisos de la app: lectura y escritura en publicaciones y publicidad; lectura en métricas del negocio, promociones y venta y envíos; sin acceso en comunicaciones y facturación."
     },
     {
       "marca": "Bubble Gummers",
-      "texto": "la pantalla de autorización apareció ya con el logo de la marca, lo que indica que ya existía una app creada antes. No confirmado cuál es su App ID."
+      "texto": "confirmado que \"Mis aplicaciones\" del DevCenter no aparece en el menú del portal: se entra solo por https://developers.mercadolibre.com.mx/devcenter."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "comprobado contra la cuenta que un usuario colaborador ni siquiera llega a la pantalla de autorización: ML lo manda a vendedores.mercadolibre.com.mx/collaborators/shield/blocked antes de validar client_id y redirect_uri."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "en \"Mis aplicaciones\" aparece una sola app, así que queda descartado que hubiera otra creada antes."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "no se pudo obtener el Client Secret. La titular entró a Editar y no apareció. Según la documentación de ML debería estar enmascarado con un botón de Mostrar en la configuración de la aplicación, pero no se verificó en pantalla."
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "proceso detenido: la cuenta tiene pendiente la validación biométrica. Dato reportado por el usuario, no verificado en pantalla por mí."
     },
     {
       "marca": "Bubble Gummers",
@@ -24,16 +40,16 @@
     {
       "marca": "Bubble Gummers",
       "texto": "verificado que el refresh_token de ML es de un solo uso y el access_token dura 6 h. El acceso se pierde si la app no se usa en 4 meses, si cambia la contraseña, si se regenera el Secret o si se revocan permisos."
-    },
-    {
-      "marca": "Bubble Gummers",
-      "texto": "proceso puesto en pausa a petición del usuario hasta poder hacer el procedimiento completo."
     }
   ],
   "pendientes": [
     {
       "marca": "Bubble Gummers",
-      "texto": "confirmar si ya existía una app en el DevCenter antes de crear otra, y con cuál App ID nos quedamos"
+      "texto": "completar la validación biométrica de la cuenta, que es lo que tiene detenido todo lo demás"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "obtener el Client Secret de la app Monitor BG, que solo puede ver la titular desde Editar en la tarjeta de la app"
     },
     {
       "marca": "Bubble Gummers",
@@ -45,11 +61,19 @@
     },
     {
       "marca": "Bubble Gummers",
-      "texto": "correr paso1 y paso2 de autorización con la titular, el code TG- caduca en minutos"
+      "texto": "correr paso1 y paso2 de autorización con la titular en línea, porque el code TG- caduca en minutos"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "confirmar que la pantalla Administrar permisos de la app muestre un usuario después del Vincular, que es la señal de que la autorización quedó"
     },
     {
       "marca": "Bubble Gummers",
       "texto": "confirmar en la primera corrida las rutas de campañas y anuncios de Product Ads, que la documentación de ML muestra de tres formas distintas"
+    },
+    {
+      "marca": "Bubble Gummers",
+      "texto": "confirmar si el stock de FULL cae bajo el permiso de Métricas del negocio o el de Venta y envíos, que no está documentado"
     },
     {
       "marca": "Bubble Gummers",
