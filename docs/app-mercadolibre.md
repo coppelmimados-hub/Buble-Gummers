@@ -56,3 +56,22 @@ Lo abre **la titular**, con la cuenta principal de Bubble Gummers, y aprieta
 ⚠️ **El code caduca en minutos y es de un solo uso.** Hay que tener
 `CLIENT_ID`, `CLIENT_SECRET` y `REDIRECT_URI` ya cargados en el proyecto de
 Apps Script ANTES de pedirlo. Si se vence, se vuelve a abrir el mismo link.
+
+## Verificado el 2026-10-06: el colaborador no puede ni abrir el link
+
+Un usuario colaborador que abre el link de autorización **no llega a ver la
+pantalla de "Vincular"**. Mercado Libre lo manda a
+`https://vendedores.mercadolibre.com.mx/collaborators/shield/blocked`
+con el mensaje "Solo la persona que es dueña de la cuenta puede ingresar a
+esta sección".
+
+El corte ocurre **antes** de que ML valide el `client_id` y el `redirect_uri`,
+así que ese bloqueo no dice nada sobre si la app está bien configurada. La
+configuración solo se puede comprobar cuando la titular abre el link.
+
+Consecuencia práctica: **no hay manera de probar el flujo sin la titular.**
+Conviene llegar a ese paso con todo lo demás ya listo, porque es el único
+momento que depende de que ella esté disponible, y el code caduca en minutos.
+
+El Secret tampoco lo puede ver un colaborador: lo tiene que sacar ella desde
+la tarjeta de la app, en el menú de los tres puntos.
