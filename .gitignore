@@ -1,0 +1,8 @@
+# Apps Script local
+.clasp.json
+node_modules/
+
+# Nunca versionar credenciales
+*.secret
+credenciales*
+.env
